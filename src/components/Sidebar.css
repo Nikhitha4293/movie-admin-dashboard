@@ -1,0 +1,55 @@
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background-color: white;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  margin-bottom: 24px;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column; /* 🔥 FORCE VERTICAL */
+  gap: 4px;
+}
+
+.sidebar-link {
+  display: block;            /* 🔥 NOT inline */
+  padding: 10px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #111827;
+  font-size: 14px;
+}
+
+.sidebar-link:hover {
+  background-color: #f3f4f6;
+}
+
+.sidebar-link.active {
+  background-color: #e5e7eb;
+  font-weight: 600;
+}
+
+/* Dark mode */
+.dark .sidebar {
+  background-color: #111827;
+  border-color: #374151;
+}
+
+.dark .sidebar-link {
+  color: #e5e7eb;
+}
+
+.dark .sidebar-link:hover {
+  background-color: #1f2937;
+}
+
+.dark .sidebar-link.active {
+  background-color: #374151;
+}
